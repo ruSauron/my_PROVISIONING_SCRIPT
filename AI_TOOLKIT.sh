@@ -1,6 +1,6 @@
 #!/bin/bash
 #set your huggingface read api key as MYHFKEY on the https://cloud.vast.ai/account/ (Settings - Environment Variables)
-#open https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev and press a button Agreed and accept this repository
+#open https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev and press a button Agree and accept this repository
 cd /workspace/
 git clone https://github.com/ostris/ai-toolkit.git
 cd ai-toolkit
