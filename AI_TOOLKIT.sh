@@ -1,3 +1,4 @@
+#!/bin/bash
 cd /workspace/
 git clone https://github.com/ostris/ai-toolkit.git
 cd ai-toolkit
