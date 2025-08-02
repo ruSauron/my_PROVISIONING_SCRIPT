@@ -11,7 +11,7 @@ source venv/bin/activate
 pip3 install --no-cache-dir torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 --index-url https://download.pytorch.org/whl/cu126
 pip3 install -r requirements.txt
 
-nohup python -c 'from huggingface_hub import snapshot_download; snapshot_download(repo_id="rusauron/aitoolkit-8bit-FLUX.1-Kontext-dev")'
+nohup python -c 'from huggingface_hub import snapshot_download; snapshot_download(repo_id="rusauron/aitoolkit-8bit-FLUX.1-Kontext-dev")' &
 
 cd ui
 AI_TOOLKIT_AUTH=myPasS npm run build_and_start
