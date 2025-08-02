@@ -3,6 +3,7 @@
 #open https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev and press a button Agree and accept this repository
 cd /workspace/
 mkdir tesflag
+nohup bash -c "sudo apt update && sudo apt install -y nodejs npm" > nodejs_install.log 2>&1 &
 git clone https://github.com/ostris/ai-toolkit.git
 cd ai-toolkit
 python3 -m venv venv
