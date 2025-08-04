@@ -13,6 +13,7 @@ pip3 install --no-cache-dir torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 -
 pip3 install -r requirements.txt
 #pip3 install hf_xet
 #nohup python -c 'from huggingface_hub import snapshot_download; snapshot_download(repo_id="rusauron/aitoolkit-8bit-FLUX.1-Kontext-dev")' > /workspace/modeldownload.log 2>&1 &
+nohup python -c 'from huggingface_hub import snapshot_download; snapshot_download(repo_id="black-forest-labs/FLUX.1-Kontext-dev")' > /workspace/modeldownload.log 2>&1 &
 #nohup bash -c "cd /workspace/ai-toolkit/ui && AI_TOOLKIT_AUTH=myPasS npm run build_and_start" > ai-toolkit.log 2>&1 &
-echo -e '#!/bin/bash\ncd /workspace/ai-toolkit/ui\nnpm run build_and_start' > /workspace/aitoolkit.sh && chmod +x /workspace/aitoolkit.sh
-
+#echo -e '#!/bin/bash\ncd /workspace/ai-toolkit/ui\nnpm run build_and_start' > /workspace/aitoolkit.sh && chmod +x /workspace/aitoolkit.sh
+echo -e '#!/bin/bash\nnpm --prefix /workspace/ai-toolkit/ui run build_and_start' > /workspace/aitoolkit.sh && chmod +x /workspace/aitoolkit.sh
